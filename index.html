@@ -1,0 +1,26 @@
+<!-- List of attributes possibles -->
+<!--  
+    minlength -> Minimal quantity necessary for send the information on input;
+    maxlength -> Maximal quantity necessary for send the information on input, but it block
+if you try write more than limiter.
+    size -> Its necessary to attribute the width of the current input;
+    pattern -> We use this attribute for specify how much or which letter or specific symbol,
+range of this, you use to send information here.
+        Examples: [0-9a-fA-F]{4,8}
+            We can write here 0 at 9 numbers, "a" at "f" characters "Maisculas" e "Minusculas"
+            and minimal 4 and maximum 8;
+-->
+
+<form>
+
+    <!-- Input -->
+    <label for="txtPassword"> Senha: </label>
+    <input type="password" name="txtPassword" 
+        minlength="5"
+        maxlength="7"
+        size="7"
+        pattern="[0-9a-fA-F]{4,8}">
+    
+    <!-- Password -->
+
+</form>
